@@ -1,0 +1,48 @@
+# @format
+
+version: "3.4"
+
+services:
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: atlasone
+      POSTGRES_PASSWORD: atlasone
+      POSTGRES_DB: atlasone
+    ports:
+      - 5432:5432
+  # Node Server
+  nodeserver:
+    image: node:12-alpine
+    command: node ./server.js
+    working_dir: /src
+    volumes:
+      - ./server:/src
+    environment:
+      DATABASE_URL: postgres://atlasone:atlasone@database/atlasone
+    ports:
+      - 5000:5000
+  # GO Server
+  goserver:
+    image: golang:latest
+    command: go run .
+    working_dir: /src
+    volumes:
+      - ./server:/src
+    environment:
+      DATABASE_URL: postgres://atlasone:atlasone@database/atlasone
+    ports:
+      - 5000:5000
+  # React Client
+  client:
+    image: node:12-alpine
+    command: yarn start
+    working_dir: /src
+    volumes:
+      - ./client:/src
+    environment:
+      POSTGRES_USER: atlasone
+      POSTGRES_PASSWORD: atlasone
+      POSTGRES_DB: atlasone
+    ports:
+      - 3000:3000
