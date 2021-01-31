@@ -65,4 +65,4 @@ Finally, we provided a `docker-compose.yml` file that you can use to start the P
 ### Final Product
 
 !["Updating Existing Investor"](https://github.com/veilance/fullstack-challenge/blob/master/documents/atlasone-overall.gif)
-!["New Investor"](https://github.com/veilance/fullstack-challenge/blob/master/docs/atlasone-new-investor.gif)
+!["New Investor"](https://github.com/veilance/fullstack-challenge/blob/master/documents/atlasone-new-investor.gif)
