@@ -31,7 +31,7 @@ Atlas One strives to eliminate paperwork and so, having intuitive forms is integ
 - [x] Next and Back button to navigate the form
 - [x] Submit button to complete the form
 - [x] Sends a POST request
-- [ ] On successful response, force download the data as a CSV/PDF
+- [x] On successful response, force download the data as a CSV/PDF
 
 ### Our Guidance:
 
