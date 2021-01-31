@@ -2,10 +2,11 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      host: '127.0.0.1',
+      host: 'database',
       user: 'atlasone',
       password: 'atlasone',
-      database: 'atlasone'
+      database: 'atlasone',
+      port: '5432'
     },
     pool: { min: 0, max: 7 },
     migrations: {

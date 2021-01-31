@@ -19,7 +19,7 @@ services:
     volumes:
       - ./server:/src
     environment:
-      DATABASE_URL: postgres://atlasone:atlasone@database/atlasone
+      DATABASE_URL: postgres://atlasone:atlasone@database:5432/atlasone
     ports:
       - 5000:5000
   # GO Server

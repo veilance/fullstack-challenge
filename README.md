@@ -22,15 +22,15 @@ Atlas One strives to eliminate paperwork and so, having intuitive forms is integ
 ### Challenge Checklist:
 
 - [x] Create 1 database table with 2 columns. 1 unique string column named `investor` and 1 number column named `total investment`.
-- [ ] Create a Go/Node server that accepts a POST request to store the form data `POST: /fund`
-- [ ] UPSERT the submitted form data and return the result
+- [x] Create a Go/Node server that accepts a POST request to store the form data `POST: /fund`
+- [x] UPSERT the submitted form data and return the result
 - [x] Create a react application
 - [x] Present form steps one at a time
 - [x] Step 1 accepts text only
 - [x] Step 2 accepts numbers only
 - [x] Next and Back button to navigate the form
 - [x] Submit button to complete the form
-- [ ] Sends a POST request
+- [x] Sends a POST request
 - [ ] On successful response, force download the data as a CSV/PDF
 
 ### Our Guidance:
