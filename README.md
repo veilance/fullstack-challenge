@@ -59,3 +59,10 @@ Gorm if you use golang https://gorm.io/
 Gin if you use golang https://github.com/gin-gonic/gin
 
 Finally, we provided a `docker-compose.yml` file that you can use to start the Postgres DB. Simply use `docker-compose up postgres` command to run your project. You can also run the entire stack with the command `docker-compose up `.
+
+=====================
+
+### Final Product
+
+!["Updating Existing Investor"](https://github.com/veilance/fullstack-challenge/blob/master/documents/atlasone-overall.gif)
+!["New Investor"](https://github.com/veilance/fullstack-challenge/blob/master/docs/atlasone-new-investor.gif)
